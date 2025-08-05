@@ -1,5 +1,3 @@
-# Vamos gerar um README.md explicando o projeto TelecomX - Parte 2
-readme_text = """
 # 📊 Projeto TelecomX - Parte 2: Predição de Evasão de Clientes (Churn)
 
 Este projeto tem como objetivo aplicar um pipeline de machine learning simples e didático para prever a evasão de clientes em uma empresa de telecomunicações fictícia chamada **TelecomX**.
