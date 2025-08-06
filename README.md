@@ -16,7 +16,7 @@ O trabalho foi conduzido no **Google Colab** utilizando Python e bibliotecas de 
 ## 🛠 Tecnologias e Bibliotecas Utilizadas
 - **Linguagem:** Python 3
 - **Análise de Dados:** Pandas, NumPy
-- **Visualização:** Matplotlib, Seaborn, Plotly (opcional)
+- **Visualização:** Matplotlib, Seaborn, Plotly 
 - **Machine Learning:** Scikit-learn, Imbalanced-learn (SMOTE)
 - **Modelos:** Regressão Logística, Random Forest
 
@@ -27,7 +27,7 @@ O trabalho foi conduzido no **Google Colab** utilizando Python e bibliotecas de 
 2. **Análise exploratória inicial**:
    - Matriz de correlação
    - Boxplot, scatter plot e histograma da evasão
-   - Resumo estatístico (`describe`)
+   - Resumo estatístico 
 3. **Pré-processamento**:
    - Remoção de colunas irrelevantes
    - Encoding (One-Hot) de variáveis categóricas
