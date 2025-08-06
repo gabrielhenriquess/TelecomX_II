@@ -1,81 +1,73 @@
-# 📊 Projeto TelecomX - Parte 2: Predição de Evasão de Clientes (Churn)
+# 📊 TelecomX - Parte 2: Predição de Evasão de Clientes
 
-Este projeto tem como objetivo aplicar um pipeline de machine learning simples e didático para prever a evasão de clientes em uma empresa de telecomunicações fictícia chamada **TelecomX**.
+Este projeto é a **segunda etapa** do desafio **TelecomX**, onde o objetivo é desenvolver modelos preditivos capazes de identificar clientes com maior probabilidade de cancelar seus serviços (**evasão/churn**).
 
-> 🔎 Nível: Júnior | 🛠️ Foco: Prática com modelos preditivos + entrega de insights
-
----
-
-## 🧠 Objetivos
-
-- Pré-processar dados (remoção de colunas irrelevantes, encoding, normalização)
-- Verificar desequilíbrios entre as classes (Churn 0 vs 1)
-- Balancear os dados com **SMOTE**
-- Treinar e avaliar dois modelos de classificação:
-  - Regressão Logística (com normalização)
-  - Random Forest (sem normalização)
-- Medir o desempenho com métricas apropriadas
-- Analisar a **importância das variáveis**
-- Gerar conclusões estratégicas com sugestões de retenção
+O trabalho foi conduzido no **Google Colab** utilizando Python e bibliotecas de análise de dados e machine learning.
 
 ---
 
-## 📁 Estrutura do Notebook
-
-1. Carregamento dos dados tratados
-2. Remoção de colunas irrelevantes (`customerID`)
-3. Encoding (One-Hot)
-4. Verificação de proporção de evasão
-5. Balanceamento com SMOTE
-6. Padronização com StandardScaler
-7. Correlação entre variáveis
-8. Análises direcionadas com boxplots
-9. Separação treino/teste (70/30)
-10. Criação dos modelos
-11. Avaliação com Acurácia, Precisão, Recall, F1-score e Matriz de Confusão
-12. Interpretação dos resultados
-13. Conclusão estratégica
+## 🎯 Objetivo
+- Analisar dados tratados da TelecomX (Parte 1 do desafio).
+- Construir modelos preditivos para prever a evasão de clientes.
+- Interpretar os resultados e gerar **insights estratégicos** para retenção.
 
 ---
 
-## 🧪 Modelos Utilizados
-
-| Modelo               | Normalização | Sensível à Escala | Tipo         |
-|----------------------|--------------|-------------------|--------------|
-| Regressão Logística  | ✅ Sim        | ✅ Sim             | Linear       |
-| Random Forest        | ❌ Não        | ❌ Não             | Baseado em árvore |
-
----
-
-## 📌 Conclusões Estratégicas
-
-- Variáveis com maior impacto: **forma de pagamento**, **tipo de contrato**, **total gasto**
-- Clientes com **contratos mensais** e **pagamento em boleto** apresentaram maior propensão à evasão
-- Sugestões de retenção:
-  - Incentivar contratos mais longos com benefícios
-  - Oferecer vantagens no pagamento via cartão automático
-  - Estratégias focadas nos primeiros meses de contrato
+## 🛠 Tecnologias e Bibliotecas Utilizadas
+- **Linguagem:** Python 3
+- **Análise de Dados:** Pandas, NumPy
+- **Visualização:** Matplotlib, Seaborn, Plotly (opcional)
+- **Machine Learning:** Scikit-learn, Imbalanced-learn (SMOTE)
+- **Modelos:** Regressão Logística, Random Forest
 
 ---
 
-## 💻 Como Executar
-
-1. Clone este repositório ou abra o notebook no Google Colab
-2. Faça upload do arquivo tratado `telecomx_tratado.csv`
-3. Execute as células em ordem
+## 📌 Etapas do Projeto
+1. **Carregamento dos dados tratados** (CSV gerado na Parte 1).
+2. **Análise exploratória inicial**:
+   - Matriz de correlação
+   - Boxplot, scatter plot e histograma da evasão
+   - Resumo estatístico (`describe`)
+3. **Pré-processamento**:
+   - Remoção de colunas irrelevantes
+   - Encoding (One-Hot) de variáveis categóricas
+   - Imputação de valores nulos
+   - Balanceamento das classes (SMOTE)
+   - Normalização (StandardScaler)
+4. **Modelagem**:
+   - Treinamento de **Regressão Logística** (modelo sensível à escala)
+   - Treinamento de **Random Forest** (modelo não sensível à escala)
+5. **Avaliação dos modelos**:
+   - Accuracy, Precision, Recall, F1-score
+   - Matriz de confusão
+   - Curva ROC e AUC
+6. **Interpretação**:
+   - Importância das variáveis (Random Forest)
+   - Comparação de métricas entre modelos
+7. **Conclusão estratégica** e recomendações para retenção.
 
 ---
 
-## ✍️ Autor
+## 📊 Principais Resultados
+- **Random Forest** apresentou melhor desempenho geral.
+- Principais fatores relacionados à evasão:
+  - Tempo de contrato
+  - Tipo de contrato
+  - Total gasto
+  - Método de pagamento
+- O SMOTE foi eficaz para corrigir o desbalanceamento de classes.
+- Insights geraram recomendações para reduzir churn e aumentar retenção.
 
-Desenvolvido com foco em aprendizado por **[Seu Nome Aqui]**  
-Projeto baseado no desafio "TelecomX - Parte 2" da Comunidade Hashtag.
+---
 
-"""
+## 🚀 Como Executar o Projeto
+1. Faça o download do arquivo **`TelecomX_II.ipynb`**.
+2. Abra o [Google Colab](https://colab.research.google.com/).
+3. Faça upload do notebook e do arquivo **`telecomx_tratado.csv`**.
+4. Execute as células na ordem.
+5. Analise os gráficos, métricas e conclusões.
 
-# Salvar o README
-readme_path = "/mnt/data/README_TelecomX_Parte2.md"
-with open(readme_path, "w", encoding="utf-8") as f:
-    f.write(readme_text)
+---
 
-readme_path
+## 📌 Autor
+Projeto desenvolvido como parte do **Desafio TelecomX - Parte 2**, seguindo as melhores práticas de análise e modelagem preditiva.
