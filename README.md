@@ -1,5 +1,10 @@
 # 📊 TelecomX - Parte 2: Predição de Evasão de Clientes
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Colab](https://img.shields.io/badge/Google%20Colab-Modelagem-yellow?logo=googlecolab)
+![Status](https://img.shields.io/badge/Projeto-Concluído-brightgreen)
+![Licença](https://img.shields.io/badge/Licença-MIT-blue)
+
 Este projeto é a **segunda etapa** do desafio **TelecomX**, onde o objetivo é desenvolver modelos preditivos capazes de identificar clientes com maior probabilidade de cancelar seus serviços (**evasão/churn**).
 
 O trabalho foi conduzido no **Google Colab** utilizando Python e bibliotecas de análise de dados e machine learning.
